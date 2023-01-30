@@ -58,8 +58,6 @@ for index in range(previsores.shape[1]):
 
 labelencoder = LabelEncoder()
 
-previsores[:,0] = labelencoder.fit_transform(previsores[:,0])
-
 """
 
 worked but wrong
