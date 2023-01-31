@@ -42,8 +42,7 @@ preco = cars.price.unique()
 
 previsores = cars.iloc[:,0:21].values
 
-
-# teste
+labelencoder = LabelEncoder()
 
 def encode_column(column):
     if isinstance(column[0], str):
@@ -54,9 +53,7 @@ def encode_column(column):
 for index in range(previsores.shape[1]):
     previsores[:, index] = encode_column(previsores[:, index])
 
-#end teste
 
-labelencoder = LabelEncoder()
 
 """
 
